@@ -14,14 +14,14 @@
 <body>
     <div class="jumbotron bg-warning">
         <header class="row">
-            <h1 class="display-3 col-12 text-center text-black">My Team</h1>
+            <h1 class="display-4 col-12 text-center text-black">My Team</h1>
         </header>
     </div>
     <main class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-4">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header bg-primary">
                         <h2>${manager.getName()}</h2>
                         <h3>
                             <i class="fas fa-mug-hot mr-2"></i> ${manager.getRole()}
@@ -47,7 +47,7 @@
             <!-- // create the html for engineers -->
             <div class="col-4">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header bg-primary">
                         <h2>${engineer.getName()}</h2>
                         <h3>
                             <i class="fas fa-glasses mr-2"></i>${engineer.getRole()}
@@ -70,7 +70,7 @@
             <!-- // create the html for interns -->
             <div class="col-4">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header bg-primary">
                         <h2>${intern.getName()}</h2>
                         <h3>
                             <i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}
