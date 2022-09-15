@@ -12,8 +12,8 @@ const generateTeam = team => {
                     <i class="fas fa-mug-hot mr-2"></i> ${manager.getRole()}
                 </h3>
             </div>
-            <div>
-                <ul>
+            <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
                     <li>
                         ID: ${manager.getId()}
                     </li>
@@ -39,8 +39,8 @@ const generateTeam = team => {
                     <i class="fas fa-glasses mr-2"></i>${engineer.getRole()}
                 </h3>
             </div>
-            <div>
-                <ul>
+            <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
                     <li>ID: ${engineer.getId()}</li>
                     <li>
                         Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a>
@@ -64,8 +64,8 @@ const generateTeam = team => {
             <i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}
         </h3>
     </div>
-    <div>
-        <ul>
+    <div class="card" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
             <li>ID: ${intern.getId()}</li>
             <li>${intern.getEmail()}</a></li>
             <li>School: ${intern.getSchool()}</li>
@@ -107,6 +107,7 @@ module.exports = team => {
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>My Team</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     </head>
     <body>
@@ -114,8 +115,10 @@ module.exports = team => {
             <h1>My Team</h1>
         </header>
         <main>
+        <div class="row col-12 d-flex justify-content-center">
             ${generateTeam(team)}
         </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>
     `;

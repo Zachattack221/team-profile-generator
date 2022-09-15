@@ -1,21 +1,23 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-// const Employee = require('./lib/Employee'); 
+ 
 
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-// const questions = require('./lib/questions');
+
 const generateTeam = require('./src/page-template');
-const { inherits } = require('util');
+// const { inherits } = require('util');
 
 // empty array to push completed team members to
 possibleTeam = [];
 
+function init() {
+
 function createTeam() {
     inquirer.prompt ([
     {
-        input: 'rawlist',
+        type: 'rawlist',
         name: 'role',
         message: 'What is your employee role?',
         choices: [
@@ -100,16 +102,16 @@ function addIntern() {
     inquirer.prompt ([
         {
             name: 'internName',
-            message: 'What is the Manager\'s name?',
+            message: 'What is the Intern\'s name?',
             },
             {
                 name: 'internId',
                 type: 'number',
-                message: 'What is the Manager\'s ID number?',
+                message: 'What is the Intern\'s ID number?',
             },
             {
                 name: 'internEmail',
-                message: 'What is the Manager\'s email?',
+                message: 'What is the Intern\'s email?',
             },
             {
                 name: 'internSchool',
@@ -134,7 +136,9 @@ function createPage() {
 
 createTeam();
 
-// init();
+};
+
+init();
 // create start() to initialize prompts
 
 
