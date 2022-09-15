@@ -3,6 +3,7 @@
 ## Table of Contents
 1. [Description](#description)
 2. [Visuals](#visuals)
+3. [Testing](#testing)
 
 ## Description
 [Link to HTML page in REPO]()
@@ -12,4 +13,7 @@ The finished product allows for quick, streamlined access to the team's individu
 
 ## Visuals
 ![Tests Passing](./images/TestsPassing.png)
-![]()
+![Sample Team](./images/SampleTeam.png)
+
+## Testing
+Once user has pulled in required node modules, enter "npm test" in console to initiate tests (via Jest)
