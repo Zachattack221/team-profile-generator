@@ -1,18 +1,21 @@
 const Intern = require("../lib/Intern");
 
-describe("Intern", () => {
-    test('getSchool', () => {
-        it('should return an object with school property when called by school variable', () => {
-            const testValue = 'FSU';
-            const obj = new Intern();
-            expect(typeof obj).toEqual(testValue);
-        });
-    });
+// pulls in Employee parent class and Intern sub-class
 
-    describe('getName', () => {
-        it('should return a value of \"Intern\" ', () => {
-            const obj = new Intern();
-            expect(typeof obj).toEqual('Intern');
-        });
-    });
+test('Can set school with constructor argument', () => {
+    const testValue = 'FSU';
+    const value = new Intern('Tom', 3, 'email@email.com', testValue);
+    expect(value.school).toBe(testValue);
+});
+
+test('Can get school with getSchool()', () => {
+    const testValue = "FSU";
+    const value = new Intern('Tom', 3, 'email@email.com', testValue);
+    expect(value.getSchool()).toBe(testValue);
+});
+
+test("getRole() should return \"Intern\"", () => {
+    const testValue = 'Intern';
+    const result = new Intern("Zach", 6, "test6@email.com", testValue);
+    expect(result.getRole()).toBe(testValue);
 });

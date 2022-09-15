@@ -11,4 +11,5 @@ This project is intended to serve as a resource through which a user can dynamic
 The finished product allows for quick, streamlined access to the team's individual emails, GitHub profiles, and role specific information. 
 
 ## Visuals
+![Tests Passing](./images/TestsPassing.png)
 ![]()
