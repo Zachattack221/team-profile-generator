@@ -4,6 +4,7 @@
 1. [Description](#description)
 2. [Visuals](#visuals)
 3. [Testing](#testing)
+4. [License](#license)
 
 ## Description
 [Link to HTML page in REPO](https://github.com/Zachattack221/team-profile-generator/blob/main/dist/team.html)
@@ -23,3 +24,6 @@ To initiate prompt sequence, enter 'node index.js' in console.
 
 User will be continually prompted to create new team memebers until user selects exit from rawlist choices. 
 At this point a populated HTML page will generate in the dist folder as team.html
+
+## License
+This application is licensed with the MIT License.
