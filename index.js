@@ -131,32 +131,9 @@ function createPage() {
     fs.writeFileSync('dist/team.html',generateTeam(possibleTeam),'UTF8')
 };
 
-// generateHtml(answers);
-
 
 createTeam();
-
 };
 
+// Calls function to start questionnaire process 
 init();
-// create start() to initialize prompts
-
-
-
-
-// const prompt = inquirer.createPromptModule();
-
-
-// prompt(coWorker).then((answers) => {
-    //     const template = generateHtml(answers);
-    //     if (!fs.existsSync('dist')) {
-        //         fs.mkdirSync('dist');
-        //     }
-        //           fs.writeFileSync('dist/team.html', template);
-        //     });
-        
-        
-        // prompt(questions).then((answers) => {
-        //         const template = generateHtml(answers);
-        //          console.log('testing');
-        // });
