@@ -2,20 +2,26 @@
 
 ## Table of Contents
 1. [Description](#description)
-2. [Visuals](#visuals)
-3. [Testing](#testing)
-4. [License](#license)
+2. [Technology](#technology)
+3. [Visuals](#visuals)
+4. [Testing](#testing)
+5. [License](#license)
 
 ## Description
-[Link to HTML page in REPO](https://github.com/Zachattack221/team-profile-generator/blob/main/dist/team.html)
-[Link to video submission](https://drive.google.com/file/d/1_rXccN3kdwZF1hox7dYbxN725gbilm4F/view)
 
 This project is intended to serve as a resource through which a user can dynamically generate a team profile, containing multiple job roles with specific information pertaining to each. Via the use of the Jest and Inquirer modules, the user is prompted for information, where that information is then populated onto a formatted HTML page. 
 The finished product allows for quick, streamlined access to the team's individual emails, GitHub profiles, and role specific information. 
 
+## Technology 
+This application uses JavaScript, Node.js, Inquirer NPM package for user prompts, Jest used to perform testing on class constructors. 
 ## Visuals
+Tests Passing
 ![Tests Passing](./images/TestsPassing.png)
+\
+Sample Team
 ![Sample Team](./images/SampleTeam.png)
+\
+[Link to video demonstration](https://drive.google.com/file/d/1_rXccN3kdwZF1hox7dYbxN725gbilm4F/view)
 
 ## Testing
 Once user has pulled in required node modules, enter "npm test" in console to initiate tests (via Jest)
