@@ -12,7 +12,7 @@
 
 This application is intended to serve as a resource through which a user can dynamically generate a team profile, containing multiple job roles with specific information pertaining to each. 
 
-Via the use of the Jest and Inquirer modules, the user is prompted for information, where that information is then populated onto a formatted HTML page. The finished product allows for quick, streamlined access to the team's individual emails, GitHub profiles, and role specific information. Using test-driven development, this application demonstrates a use case for Object Oriented Programming, using classes and constructors to generate a team with interconnected information. 
+Via the use of the Jest and Inquirer modules, the user is prompted for information, where that information is then populated onto a formatted HTML page. The finished product allows for quick, streamlined access to the team's individual emails, GitHub profiles, and role specific information. Using test-driven development, this application demonstrates a use case for Object Oriented Programming, employing classes and constructors to generate a team with interconnected information, and then testing the functionality of the constructed data through Jest. 
 
 ## Technology 
 This application uses JavaScript, Node.js, Inquirer NPM package for user prompts, and Jest to perform testing on class constructors. The 'FS module' is employed to control the generation of new files once the sufficient Inquirer prompts have been completed. 
