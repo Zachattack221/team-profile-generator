@@ -1,6 +1,6 @@
 const Engineer = require("../lib/Engineer");
 
-// // pulls in Employee parent class and Engineer sub-class
+// pulls in Employee parent class and Engineer sub-class
 
 test('Can set GitHub with constructor argument', () => {
     const testValue = 'gitty85';

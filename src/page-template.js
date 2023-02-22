@@ -1,4 +1,3 @@
-// PROVIDED BY INSTRUCTOR 2022-09-09
 // create the team
 const generateTeam = team => {
 
@@ -33,7 +32,7 @@ const generateTeam = team => {
         `;
     };
 
-    // create the html for engineers
+    // creates the html for engineers
     const generateEngineer = engineer => {
         return `
         <div class="col-4">
@@ -61,7 +60,7 @@ const generateTeam = team => {
         `;
     };
 
-    // create the html for interns
+    // creates the html for interns
     const generateIntern = intern => {
         return `
         <div class="col-4">
