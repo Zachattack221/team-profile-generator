@@ -84,6 +84,7 @@ const generateTeam = team => {
         `;
     };
 
+// Combines generated team, filters and pushes together Manager, Engineer, and Intern components 
     const html = [];
 
     html.push(team
